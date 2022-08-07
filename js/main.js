@@ -70,9 +70,8 @@ gtag('js', new Date());
 gtag('config', analytics.search.id);
 gtag('event', 'redirect', {
     'redirect_url': redirectTo,
-    // 'event_callback': () => window.location.href = redirectTo,
+    'event_callback': () => window.location.href = redirectTo,
 });
-console.log(document.scripts[0].src);
 
 window.onload = () => {
     setTimeout(() => {
