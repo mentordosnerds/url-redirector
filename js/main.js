@@ -66,6 +66,8 @@ function gtag() {
 const redirectTo = getRedirectUrl();
 const analytics = new URL(document.scripts[0].src);
 
+document.title = redirectTo;
+
 gtag('js', new Date());
 
 gtag('config', analytics.search.id, {
