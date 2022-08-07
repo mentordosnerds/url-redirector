@@ -69,6 +69,9 @@ const analytics = new URL(document.scripts[0].src);
 gtag('js', new Date());
 gtag('config', analytics.search.id);
 gtag('event', 'redirect', {
+    'event_category': 'Redirections',
+    'event_label': 'Redirect TO',
+    'value': redirectTo,
     'redirect_url': redirectTo,
     'event_callback': () => window.location.href = redirectTo,
 });
