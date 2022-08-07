@@ -76,5 +76,5 @@ gtag('event', 'redirect', {
 window.onload = () => {
     setTimeout(() => {
         window.location.href = redirectTo;
-    }, 3000);
+    }, 5000);
 }
