@@ -74,6 +74,7 @@ gtag('event', 'redirect', {
     'value': redirectTo,
     'redirect_url': redirectTo,
     'event_callback': () => window.location.href = redirectTo,
+    'non_interaction': true,
 });
 
 window.onload = () => {
