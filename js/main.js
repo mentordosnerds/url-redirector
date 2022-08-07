@@ -67,7 +67,10 @@ const redirectTo = getRedirectUrl();
 const analytics = new URL(document.scripts[0].src);
 
 gtag('js', new Date());
+
 gtag('config', analytics.search.id);
+gtag('config', analytics.search.id, { 'transport_type': 'beacon'});
+
 gtag('event', 'redirect', {
     'event_category': 'Redirections',
     'event_label': 'Redirect TO',
