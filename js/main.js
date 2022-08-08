@@ -43,7 +43,7 @@ function getRequestId(url) {
     const candidates = [
         url.username,
         url.search.substring(1),
-        url.pathname,
+        url.pathname.substring(1),
     ].filter((value) => { return value.length > 0; });
 
     return candidates[0];
@@ -55,6 +55,8 @@ function getRedirectUrl(sourceUrl) {
     const domain = url.hostname;
     const urls = redirects[domain] || redirects[domains.default];
     const target = id in aliases ? aliases[id] : id;
+
+    console.log(url, id, domain, urls, target);
 
     return urls[target] || defaultUrl;
 }
