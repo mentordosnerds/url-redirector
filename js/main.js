@@ -56,8 +56,6 @@ function getRedirectUrl(sourceUrl) {
     const urls = redirects[domain] || redirects[domains.default];
     const target = id in aliases ? aliases[id] : id;
 
-    console.log(url, id, domain, urls, target);
-
     return urls[target] || defaultUrl;
 }
 
