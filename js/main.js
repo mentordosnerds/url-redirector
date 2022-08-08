@@ -49,8 +49,8 @@ function getRequestId(url) {
     return candidates[0];
 }
 
-function getRedirectUrl() {
-    const url = new URL(window.location.href);
+function getRedirectUrl(sourceUrl) {
+    const url = new URL(sourceUrl);
     const id = getRequestId(url);
     const domain = url.hostname;
     const urls = redirects[domain] || redirects[domains.default];
@@ -59,11 +59,12 @@ function getRedirectUrl() {
     return urls[target] || defaultUrl;
 }
 
-const targetUrl = getRedirectUrl();
+const sourceUrl = window.location.href;
+const targetUrl = getRedirectUrl(sourceUrl);
 const redirect = () => { window.location.href = targetUrl; };
 const analytics = new URL(document.scripts[0].src);
 
-document.title = `${document.location.search} => ${targetUrl}`;
+document.title = `${document.location} => ${targetUrl}`;
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
