@@ -39,46 +39,49 @@ const aliases = {
 
 const defaultUrl = `${redirects[domains.default]['instagram']}`;
 
-function getRedirectUrl() {
-    const url = new URL(window.location.href);
-    const domain = url.hostname;
-    const query = url.search.length > 0 ? url.search.substring(1/*, url.search.search('&')*/) : '';
-    const id = query.length ? query : url.idname;
-    const urls = redirects[domain] || redirects[domains.default];
+function getRequestId(url) {
+    const candidates = [
+        url.username,
+        url.search.substring(1),
+        url.pathname,
+    ].filter((value) => { return value.length > 0; });
 
-    if (id in aliases) {
-        return `${urls[aliases[id]]}`;
-    }
-
-    if (id in urls) {
-        return `${urls[id]}`;
-    }
-
-    return defaultUrl;
+    return candidates[0];
 }
 
+function getRedirectUrl() {
+    const url = new URL(window.location.href);
+    const id = getRequestId(url);
+    const domain = url.hostname;
+    const urls = redirects[domain] || redirects[domains.default];
+    const target = id in aliases ? aliases[id] : id;
+
+    return urls[target] || defaultUrl;
+}
+
+const targetUrl = getRedirectUrl();
+const redirect = () => { window.location.href = targetUrl; };
+const analytics = new URL(document.scripts[0].src);
+
+document.title = `${document.location.search} => ${targetUrl}`;
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
     dataLayer.push(arguments);
 }
 
-const redirectTo = getRedirectUrl();
-const analytics = new URL(document.scripts[0].src);
-
-document.title = redirectTo;
-
 gtag('js', new Date());
 
 gtag('config', analytics.search.id, {
     'transport_type': 'beacon',
-    'redirectTo': redirectTo,
-    'event_callback': () => window.location.href = redirectTo,
     'non_interaction': true,
 });
 
+gtag('event', 'redirect', {
+    'targetUrl': targetUrl,
+    'event_callback': redirect,
+});
+
 window.onload = () => {
-    setTimeout(() => {
-        window.location.href = redirectTo;
-    }, 5000);
-}
+    setTimeout(redirect, 5000);
+};
