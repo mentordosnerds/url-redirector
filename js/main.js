@@ -40,13 +40,7 @@ const aliases = {
 const defaultUrl = `${redirects[domains.default]['instagram']}`;
 
 function getRequestId(url) {
-    const candidates = [
-        url.username,
-        url.search.substring(1),
-        url.pathname.substring(1),
-    ].filter((value) => { return value.length > 0; });
-
-    return candidates[0];
+    return url.pathname.substring(1);
 }
 
 function getRedirectUrl(sourceUrl) {
