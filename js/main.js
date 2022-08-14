@@ -61,28 +61,15 @@ function getRedirectUrl(sourceUrl) {
 
 const sourceUrl = window.location.href;
 const targetUrl = getRedirectUrl(sourceUrl);
+const dataLayer = window.dataLayer = window.dataLayer || [];
 const redirect = () => { window.location.href = targetUrl; };
-const analytics = new URL(document.scripts[0].src);
 
-document.title = `${document.location} => ${targetUrl}`;
-window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-    dataLayer.push(arguments);
-}
-
-gtag('js', new Date());
-
-gtag('config', analytics.search.id, {
-    'transport_type': 'beacon',
-    'non_interaction': true,
+dataLayer.push({'time': new Date()});
+dataLayer.push({
+    'event': 'Pageview',
+    'pagePath': targetUrl,
+    'pageTitle': sourceUrl,
+    'visitorType': 'customer',
+    'eventCallback': redirect,
+    'eventTimeout' : 5000
 });
-
-gtag('event', 'redirect', {
-    'targetUrl': targetUrl,
-    'event_callback': redirect,
-});
-
-window.onload = () => {
-    setTimeout(redirect, 5000);
-};
