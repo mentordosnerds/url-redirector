@@ -16,6 +16,7 @@ const redirects = {
         'beacons': 'https://beacons.page/coisa',
         'whatsapp': 'https://api.whatsapp.com/message/64RTLCYDNMMTK1',
         'blog': 'https://blog.mentor.dev.br/',
+        'tiktok': 'https://www.tiktok.com/@mentordosnerds',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
