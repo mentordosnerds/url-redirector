@@ -58,7 +58,7 @@ const sourceUrl = window.location.href;
 const targetUrl = getRedirectUrl(sourceUrl);
 const dataLayer = window.dataLayer = window.dataLayer || [];
 const redirect = () => { window.location.href = targetUrl; };
-const timeout = 5000;
+const timeout = 3000;
 
 dataLayer.push({'time': new Date()});
 dataLayer.push({
@@ -70,4 +70,4 @@ dataLayer.push({
     'eventTimeout' : timeout
 });
 
-setTimeout(redirect, timeout + 1000);
+setTimeout(redirect, timeout + 100);
