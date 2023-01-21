@@ -9,7 +9,7 @@ const redirects = {
     'mentordosnerds.com': {
         'instagram': 'https://instagram.com/mentordosnerds/',
         'facebook': 'https://www.facebook.com/mentordosnerds/',
-        'youtube': 'https://www.youtube.com/channel/UCryfS2QsHdNT8RCp0-XNH_g',
+        'youtube': 'https://www.youtube.com/@mentordosnerds',
         'twitter': 'https://twitter.com/mentordosnerds',
         'github': 'https://github.com/mentordosnerds',
         'linkedin': 'https://www.linkedin.com/company/mentordosnerds/',
