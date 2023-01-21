@@ -13,7 +13,7 @@ const redirects = {
         'twitter': 'https://twitter.com/mentordosnerds',
         'github': 'https://github.com/mentordosnerds',
         'linkedin': 'https://www.linkedin.com/company/mentordosnerds/',
-        'beacons': 'https://beacons.page/coisa',
+        'beacons': 'https://beacons.page/mentordosnerds',
         'whatsapp': 'https://api.whatsapp.com/message/64RTLCYDNMMTK1',
         'blog': 'https://blog.mentor.dev.br/',
         'tiktok': 'https://www.tiktok.com/@mentordosnerds',
