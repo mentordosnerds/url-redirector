@@ -17,6 +17,7 @@ const redirects = {
         'whatsapp': 'https://api.whatsapp.com/message/64RTLCYDNMMTK1',
         'blog': 'https://blog.mentor.dev.br/',
         'tiktok': 'https://www.tiktok.com/@mentordosnerds',
+        'discord': 'https://discord.gg/W9hbp6j4',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
     'felipeabreu.com.br': {
