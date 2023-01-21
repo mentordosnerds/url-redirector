@@ -37,6 +37,7 @@ const aliases = {
     'li': 'linkedin',
     'lkdi': 'linkedin',
     'links': 'beacons',
+    'bio': 'beacons',
 };
 
 const defaultUrl = `${redirects[domains.default]['instagram']}`;
