@@ -5,6 +5,7 @@ const domains = {
     }
 };
 
+// @TODO pinterest
 const redirects = {
     'mentordosnerds.com': {
         'instagram': 'https://instagram.com/mentordosnerds/',
@@ -20,6 +21,7 @@ const redirects = {
         'discord': 'https://discord.gg/W9hbp6j4',
         'spotify': 'https://open.spotify.com/user/12145113997?si=82e6e5fff43346ca',
         'telegram': 'https://t.me/mentordosnerds',
+        'amazon': 'https://amzn.to/3QUgetJ',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
     'felipeabreu.com.br': {
