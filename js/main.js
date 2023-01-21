@@ -19,6 +19,7 @@ const redirects = {
         'tiktok': 'https://www.tiktok.com/@mentordosnerds',
         'discord': 'https://discord.gg/W9hbp6j4',
         'spotify': 'https://open.spotify.com/user/12145113997?si=82e6e5fff43346ca',
+        'telegram': 'https://t.me/mentordosnerds',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
     'felipeabreu.com.br': {
