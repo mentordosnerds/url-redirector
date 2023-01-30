@@ -27,6 +27,7 @@ const redirects = {
     },
     'produtos.mentordosnerds.com.br': {
         'livro-poder-da-autorresponsabilidade': 'https://amzn.to/3Sqe8AZ',
+        'livro-foco-na-pratica': 'https://amzn.to/3CVsa7G',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
