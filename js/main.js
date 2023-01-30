@@ -29,6 +29,7 @@ const redirects = {
         'livro-poder-da-autorresponsabilidade': 'https://amzn.to/3Sqe8AZ',
         'livro-foco-na-pratica': 'https://amzn.to/3CVsa7G',
         'livro-pode-da-acao': 'https://amzn.to/3DmvjOr',
+        'livro-pode-alta-performance': 'https://amzn.to/3WPFK4F',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
