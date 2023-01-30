@@ -31,6 +31,7 @@ const redirects = {
         'livro-pode-da-acao': 'https://amzn.to/3DmvjOr',
         'livro-poder-alta-performance': 'https://amzn.to/3WPFK4F',
         'livro-poder-do-habito': 'https://amzn.to/3JvqCpY',
+        'livro-homem-rico-babilonia': 'https://amzn.to/3RqakRd',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
