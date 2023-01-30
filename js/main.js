@@ -25,6 +25,9 @@ const redirects = {
         'amazon': 'https://amzn.to/3QUgetJ',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
+    'produtos.mentordosnerds.com.br': {
+        'livro-poder-da-autorresponsabilidade': 'https://amzn.to/3Sqe8AZ',
+    },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
         'beacons': 'https://beacons.page/coisa',
