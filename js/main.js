@@ -79,7 +79,7 @@ const timeout = 3000;
 
 dataLayer.push({'time': new Date()});
 dataLayer.push({
-    'event': 'Pageview',
+    'event': 'Redirect',
     'pagePath': targetUrl,
     'pageTitle': sourceUrl,
     'visitorType': 'customer',
