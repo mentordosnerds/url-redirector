@@ -84,7 +84,8 @@ dataLayer.push({
     'pageTitle': sourceUrl,
     'visitorType': 'customer',
     'eventCallback': redirect,
-    'eventTimeout' : timeout
+    'eventTimeout' : timeout,
+    'time': new Date(),
 });
 
 setTimeout(redirect, timeout + 100);
