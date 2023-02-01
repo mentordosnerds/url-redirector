@@ -77,15 +77,18 @@ const dataLayer = window.dataLayer = window.dataLayer || [];
 const redirect = () => { window.location.href = targetUrl; };
 const timeout = 3000;
 
-dataLayer.push({'time': new Date()});
-dataLayer.push({
-    'event': 'Redirect',
+function gtag() {
+    dataLayer.push(arguments)
+}
+
+gtag('js', new Date())
+gtag('event', 'redirect', {
+    'time': new Date(),
+    'visitorType': 'customer',
     'pagePath': targetUrl,
     'pageTitle': sourceUrl,
-    'visitorType': 'customer',
-    'eventCallback': redirect,
     'eventTimeout' : timeout,
-    'time': new Date(),
+    'eventCallback': redirect,
 });
 
 setTimeout(redirect, timeout + 100);
