@@ -1,3 +1,24 @@
+const getRequestId = (url) => url.pathname.substring(1)
+
+const getRedirectUrl = (sourceUrl) => {
+    const url = new URL(sourceUrl);
+    const id = getRequestId(url);
+    const domain = url.hostname;
+    const urls = redirects[domain] || redirects[domains.default];
+    const target = id in aliases ? aliases[id] : id;
+
+    return urls[target] || defaultUrl;
+}
+
+const redirect = () => {
+    window.location.href = targetUrl
+}
+
+const gtag = () => {
+    const dataLayer = window.dataLayer = window.dataLayer || []
+    dataLayer.push(arguments)
+}
+
 const domains = {
     'default': 'mentordosnerds.com',
     'aliases': {
@@ -33,6 +54,8 @@ const redirects = {
         'livro-poder-do-habito': 'https://amzn.to/3JvqCpY',
         'livro-homem-rico-babilonia': 'https://amzn.to/3RqakRd',
         'livro-atitude-mental-positiva': 'https://amzn.to/3wIT6Vx',
+        'livro-roube-como-um-artista': 'https://amzn.to/3I8Fytj',
+        'diario-roube-como-um-artista': 'https://amzn.to/3RwrgFP',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
@@ -56,30 +79,10 @@ const aliases = {
 };
 
 const defaultUrl = `${redirects[domains.default]['instagram']}`;
-
-function getRequestId(url) {
-    return url.pathname.substring(1);
-}
-
-function getRedirectUrl(sourceUrl) {
-    const url = new URL(sourceUrl);
-    const id = getRequestId(url);
-    const domain = url.hostname;
-    const urls = redirects[domain] || redirects[domains.default];
-    const target = id in aliases ? aliases[id] : id;
-
-    return urls[target] || defaultUrl;
-}
-
 const sourceUrl = window.location.href;
 const targetUrl = getRedirectUrl(sourceUrl);
-const dataLayer = window.dataLayer = window.dataLayer || [];
-const redirect = () => { window.location.href = targetUrl; };
-const timeout = 3000;
 
-function gtag() {
-    dataLayer.push(arguments)
-}
+const timeout = 3000;
 
 gtag('js', new Date())
 gtag('event', 'redirect', {
