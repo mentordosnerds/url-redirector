@@ -59,6 +59,8 @@ const redirects = {
         'kit-roube-como-um-artista': 'https://amzn.to/3wXXz7e',
         'livro-mostre-seu-trabalho': 'https://amzn.to/3DKfWQy',
         'livro-siga-em-frente': 'https://amzn.to/3Ym0O3S',
+        'livro-5-liguagens-amor': 'https://amzn.to/3HvbZQW',
+        'livro-5-liguagens-criancas': 'https://amzn.to/3RCEfWE',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
