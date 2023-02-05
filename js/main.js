@@ -66,6 +66,7 @@ const redirects = {
         'livro-gatilhos-mentais': 'https://amzn.to/3l1KoPE',
         'livro-como-fazer-amigos': 'https://amzn.to/3HVOW27',
         'livro-como-convencer-90-seg': 'https://amzn.to/3jzTBOW',
+        'livro-rapido-devagar': 'https://amzn.to/3wX55ix',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
