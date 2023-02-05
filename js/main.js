@@ -56,6 +56,9 @@ const redirects = {
         'livro-atitude-mental-positiva': 'https://amzn.to/3wIT6Vx',
         'livro-roube-como-um-artista': 'https://amzn.to/3I8Fytj',
         'diario-roube-como-um-artista': 'https://amzn.to/3RwrgFP',
+        'kit-roube-como-um-artista': 'https://amzn.to/3wXXz7e',
+        'livro-mostre-seu-trabalho': 'https://amzn.to/3DKfWQy',
+        'livro-siga-em-frente': 'https://amzn.to/3Ym0O3S',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
