@@ -14,9 +14,9 @@ const redirect = () => {
     window.location.href = targetUrl
 }
 
-const gtag = () => {
+const gtag = (...args) => {
     const dataLayer = window.dataLayer = window.dataLayer || []
-    dataLayer.push(arguments)
+    dataLayer.push(args)
 }
 
 const domains = {
