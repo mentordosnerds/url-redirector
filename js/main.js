@@ -68,6 +68,7 @@ const redirects = {
         'livro-como-convencer-90-seg': 'https://amzn.to/3jzTBOW',
         'livro-rapido-devagar': 'https://amzn.to/3wX55ix',
         'livro-o-jeito-disney': 'https://amzn.to/3HZbKyX',
+        'livro-antifragil': 'https://amzn.to/3HCzTKe',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
