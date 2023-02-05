@@ -64,6 +64,7 @@ const redirects = {
         'livro-raiz-da-rejeicao': 'https://amzn.to/3JHLJ8P',
         'livro-armas-persuasao-2': 'https://amzn.to/40xDNNm',
         'livro-gatilhos-mentais': 'https://amzn.to/3l1KoPE',
+        'livro-como-fazer-amigos': 'https://amzn.to/3HVOW27',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
