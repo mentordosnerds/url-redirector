@@ -69,6 +69,7 @@ const redirects = {
         'livro-rapido-devagar': 'https://amzn.to/3wX55ix',
         'livro-o-jeito-disney': 'https://amzn.to/3HZbKyX',
         'livro-antifragil': 'https://amzn.to/3HCzTKe',
+        'livro-arte-da-guerra': 'https://amzn.to/3HZBw6o',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
