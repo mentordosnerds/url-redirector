@@ -61,6 +61,7 @@ const redirects = {
         'livro-siga-em-frente': 'https://amzn.to/3Ym0O3S',
         'livro-5-liguagens-amor': 'https://amzn.to/3HvbZQW',
         'livro-5-liguagens-criancas': 'https://amzn.to/3RCEfWE',
+        'livro-raiz-da-rejeicao': 'https://amzn.to/3JHLJ8P',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
