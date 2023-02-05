@@ -63,6 +63,7 @@ const redirects = {
         'livro-5-liguagens-criancas': 'https://amzn.to/3RCEfWE',
         'livro-raiz-da-rejeicao': 'https://amzn.to/3JHLJ8P',
         'livro-armas-persuasao-2': 'https://amzn.to/40xDNNm',
+        'livro-gatilhos-mentais': 'https://amzn.to/3l1KoPE',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
