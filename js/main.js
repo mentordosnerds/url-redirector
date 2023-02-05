@@ -65,6 +65,7 @@ const redirects = {
         'livro-armas-persuasao-2': 'https://amzn.to/40xDNNm',
         'livro-gatilhos-mentais': 'https://amzn.to/3l1KoPE',
         'livro-como-fazer-amigos': 'https://amzn.to/3HVOW27',
+        'livro-como-convencer-90-seg': 'https://amzn.to/3jzTBOW',
     },
     'felipeabreu.com.br': {
         'github': 'https://github.com/coisa',
