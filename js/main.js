@@ -1,13 +1,13 @@
 const getRequestId = (url) => url.pathname.substring(1)
 
-const getRedirectUrl = (sourceUrl) => {
-    const url = new URL(sourceUrl);
+const getRedirectDomainByUrl = (url) => url.hostname in redirects ? url.hostname : 'mentordosnerds.com'
+
+const getTargetUrlByLocation = (url) => {
+    const domain =  getRedirectDomainByUrl(url);
     const id = getRequestId(url);
-    const domain = url.hostname;
-    const urls = redirects[domain] || redirects[domains.default];
     const target = id in aliases ? aliases[id] : id;
 
-    return urls[target] || defaultUrl;
+    return redirects[domain][target];
 }
 
 const redirect = () => {
@@ -18,13 +18,6 @@ const gtag = (...args) => {
     const dataLayer = window.dataLayer = window.dataLayer || []
     dataLayer.push(args)
 }
-
-const domains = {
-    'default': 'mentordosnerds.com',
-    'aliases': {
-        'mentor.dev.br': 'mentordosnerds.com',
-    }
-};
 
 // @TODO pinterest
 const redirects = {
@@ -46,7 +39,11 @@ const redirects = {
         'amazon': 'https://amzn.to/3QUgetJ',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
+    'checkout.mentordosnerds.com.br': {
+        'notion-gestao-despesas': 'https://checkout.mycheckout.com.br/checkout/6480ae283c15732276facf2b',
+    },
     'produtos.mentordosnerds.com.br': {
+        'notion-gestao-despesas': 'https://notion-gestao-de-despesas.webflow.io/',
         'livro-poder-da-autorresponsabilidade': 'https://amzn.to/3Sqe8AZ',
         'livro-foco-na-pratica': 'https://amzn.to/3CVsa7G',
         'livro-pode-da-acao': 'https://amzn.to/3DmvjOr',
@@ -93,9 +90,8 @@ const aliases = {
     'bio': 'beacons',
 };
 
-const defaultUrl = `${redirects[domains.default]['instagram']}`;
-const sourceUrl = window.location.href;
-const targetUrl = getRedirectUrl(sourceUrl);
+const sourceUrl = window.location;
+const targetUrl = getTargetUrlByLocation(sourceUrl);
 
 const timeout = 3000;
 
