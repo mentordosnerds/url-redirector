@@ -3,7 +3,7 @@ const defaultUrl = `${redirects[defaultDomain]['instagram']}`;
 
 const getRequestId = (url) => url.pathname.substring(1)
 
-const getRedirectDomainByUrl = (url) => url.hostname in redirects ? url.hostname : 'mentordosnerds.com'
+const getRedirectDomainByUrl = (url) => url.hostname in redirects ? url.hostname : defaultDomain
 
 const getTargetUrlByLocation = (url) => {
     const domain =  getRedirectDomainByUrl(url);
