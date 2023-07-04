@@ -1,6 +1,3 @@
-const defaultDomain = 'mentodosnerds.com';
-const defaultUrl = `${redirects[defaultDomain]['instagram']}`;
-
 const getRequestId = (url) => url.pathname.substring(1)
 
 const getRedirectDomainByUrl = (url) => url.hostname in redirects ? url.hostname : defaultDomain
@@ -92,6 +89,9 @@ const aliases = {
     'links': 'beacons',
     'bio': 'beacons',
 };
+
+const defaultDomain = 'mentodosnerds.com';
+const defaultUrl = `${redirects[defaultDomain]['instagram']}`;
 
 const sourceUrl = window.location;
 const targetUrl = getTargetUrlByLocation(sourceUrl);
