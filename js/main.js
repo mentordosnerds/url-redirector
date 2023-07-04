@@ -90,7 +90,7 @@ const aliases = {
     'bio': 'beacons',
 };
 
-const defaultDomain = 'mentodosnerds.com';
+const defaultDomain = 'mentordosnerds.com';
 const defaultUrl = `${redirects[defaultDomain]['instagram']}`;
 
 const sourceUrl = window.location;
