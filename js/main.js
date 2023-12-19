@@ -43,7 +43,7 @@ const redirects = {
         'notion-gestao-despesas': 'https://checkout.mycheckout.com.br/checkout/6480ae283c15732276facf2b',
     },
     'produtos.mentordosnerds.com.br': {
-        '': 'https://fslabreu.mercadoshops.com.br/',
+        '': 'https://produtos.mentordosnerds.com.br/mercadoshops',
         'mercadoshops': 'https://fslabreu.mercadoshops.com.br/',
         'amazon': 'https://amzn.to/3vdKatL',
         'behringer': 'https://fslabreu.mercadoshops.com.br/MLB-3933938302-interface-de-audio-behringer-u-phoria-umc22-_JM',
