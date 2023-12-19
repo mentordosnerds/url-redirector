@@ -36,7 +36,7 @@ const redirects = {
         'spotify': 'https://open.spotify.com/user/12145113997?si=82e6e5fff43346ca',
         'telegram': 'https://t.me/felipeslabreu',
         'grupo-telegram': 'https://t.me/mentordosnerds',
-        'amazon': 'https://amzn.to/3QUgetJ',
+        'amazon': 'https://amzn.to/3vdKatL',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
     'checkout.mentordosnerds.com.br': {
