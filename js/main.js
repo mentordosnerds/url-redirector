@@ -36,7 +36,7 @@ const redirects = {
         'spotify': 'https://open.spotify.com/user/12145113997?si=82e6e5fff43346ca',
         'telegram': 'https://t.me/felipeslabreu',
         'grupo-telegram': 'https://t.me/mentordosnerds',
-        'amazon': 'https://amzn.to/3vdKatL',
+        'amazon': 'https://produtos.mentordosnerds.com.br/amazon',
         'transcendendo-ao-sucesso': 'https://chat.whatsapp.com/Dp5qqPmFkDC24ybaZ7oKRF',
     },
     'checkout.mentordosnerds.com.br': {
@@ -44,6 +44,8 @@ const redirects = {
     },
     'produtos.mentordosnerds.com.br': {
         '': 'https://fslabreu.mercadoshops.com.br/',
+        'mercadoshops': 'https://fslabreu.mercadoshops.com.br/',
+        'amazon': 'https://amzn.to/3vdKatL',
         'behringer': 'https://fslabreu.mercadoshops.com.br/MLB-3933938302-interface-de-audio-behringer-u-phoria-umc22-_JM',
         'notion-gestao-despesas': 'https://notion-gestao-de-despesas.webflow.io/',
         'livro-poder-da-autorresponsabilidade': 'https://amzn.to/3TyQPJu',
